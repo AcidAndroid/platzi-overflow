@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit(formulario)" #formulario="ngForm">
+  <mat-form-field>
+    <textarea matInput
+              placeholder="Respuesta"
+              name="description"
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="2"
+              cdkAutosizeMaxRows="5"
+              ngModel
+              ></textarea>              
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary">Responder</button>
+</form>
