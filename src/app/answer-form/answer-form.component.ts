@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '../../../node_modules/@angular/forms';
-import { Answer, User } from './answer.model';
+import { Answer } from './answer.model';
 import { Question } from '../question/question.model';
+import { User } from '../auth/user.model';
 
 @Component({
   selector: 'app-answer-form',
@@ -17,7 +18,7 @@ export class AnswerFormComponent implements OnInit {
       form.value.description
       ,this.question
       ,new Date
-      ,new User('Pop','Loco')
+      ,new User(null,null,'Pop','Loco')
     )
 
     this.question.answers.unshift(answer)
