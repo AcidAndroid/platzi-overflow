@@ -12,7 +12,8 @@ import { MomentModule } from 'angular2-moment';
 import { AnswerFormComponent } from './answer-form/answer-form.component';
 import { SigninScreenComponent } from './auth/signin-screen/signin-screen.component';
 import { SignupScreenComponent } from './auth/signup-screen/signup-screen.component';
-
+import { QuestionListComponent } from './question/question-list/question-list.component';
+import { QuestionFormComponent } from './question/question-form/question-form.component';
 
 
 
@@ -21,7 +22,7 @@ import { SignupScreenComponent } from './auth/signup-screen/signup-screen.compon
   declarations: [
     AppComponent,
     QuestionDetailComponent,    
-    AnswerFormComponent, SigninScreenComponent, SignupScreenComponent
+    AnswerFormComponent, SigninScreenComponent, SignupScreenComponent, QuestionListComponent, QuestionFormComponent
   ],
   imports: [
     BrowserModule,
