@@ -1,5 +1,14 @@
+.link{
+    cursor: pointer
+}
 i.help{
     width: 48px !important; 
     height:48px !important; 
     font-size: 48px !important;
+}
+.add-question{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 48px;
 }

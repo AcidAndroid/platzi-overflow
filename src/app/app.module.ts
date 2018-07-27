@@ -14,6 +14,9 @@ import { SigninScreenComponent } from './auth/signin-screen/signin-screen.compon
 import { SignupScreenComponent } from './auth/signup-screen/signup-screen.component';
 import { QuestionListComponent } from './question/question-list/question-list.component';
 import { QuestionFormComponent } from './question/question-form/question-form.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { Routing } from './/app-routing.module';
+
 
 
 
@@ -22,7 +25,11 @@ import { QuestionFormComponent } from './question/question-form/question-form.co
   declarations: [
     AppComponent,
     QuestionDetailComponent,    
-    AnswerFormComponent, SigninScreenComponent, SignupScreenComponent, QuestionListComponent, QuestionFormComponent
+    AnswerFormComponent
+    , SigninScreenComponent
+    , SignupScreenComponent
+    , QuestionListComponent
+    , QuestionFormComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,10 @@ import { QuestionFormComponent } from './question/question-form/question-form.co
     MaterialModule,
     MomentModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    Routing,
+
 
   ],
   providers: [],
